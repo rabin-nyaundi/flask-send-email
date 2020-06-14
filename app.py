@@ -24,10 +24,8 @@ def index():
         email = request.form.get('email')
         message = request.form.get('message')
         name = request.form.get('name')
-        subject = 'WebSite Design'
         
-        msg = Message('Your Subject here', recipients = ['your email address'])        
-        msg.body = message
+        msg = Message('Your Subject here', recipients = ['recipient email address'])        
         msg.html = '<br> Hello name,<br>'+ message + '<br><br> Kind regards<br>' + name
         mail.send(msg)
         

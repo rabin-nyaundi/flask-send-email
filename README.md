@@ -1,1 +1,3 @@
- sending emails from fpask python simpla app
+ sending emails from flask python simple app.
+ Requirements
+ Python, Flask.
